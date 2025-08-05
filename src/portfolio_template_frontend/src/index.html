@@ -9,7 +9,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yuehan Portfolio</title>
+    <title>Tobias Portfolio</title>
     <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
@@ -202,8 +202,7 @@
         object-fit: cover;
         border-radius: 50%;
         position: relative;
-        z-index: 1;
-        background: transparent;
+        z-index: 5;
         box-shadow: 0 12px 48px 0 black; /* Drop shadow from the bottom */
       }
 
@@ -471,11 +470,15 @@
           height: 200px;
         }
       }
+      
+      .about-link{
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
-    <header>
-      <div class="logo">YHNALX</div>
+    <!-- <header>
+      <div class="logo">Suicode</div>
       <nav>
         <ul>
           <li><a href="#">ABOUT</a></li>
@@ -484,35 +487,37 @@
           <li><a href="#">CONTACT</a></li>
         </ul>
       </nav>
-    </header>
+    </header> -->
     <main>
       <section class="hero">
         <div class="hero-content">
           <h2>Hi there,</h2>
           <h1>I'm <span class="highlight">Tobias Suico</span></h1>
           <p>I am an Innovator, and I Build projects for Fun |</p>
-          <button class="about-btn">
-            <i class="fas fa-user"></i>
-            About Me
-          </button>
+          <a href="#about" class="about-link">
+            <button class="about-btn">
+              <i class="fas fa-user"></i>
+              About Me
+            </button>
+          </a>
           <div class="circles">
-            <a
+            <!-- <a
               href="https://linkedin.com/"
               target="_blank"
               class="circle"
               title="LinkedIn"
             >
               <i class="fab fa-linkedin-in" style="color: #0a66c2"></i>
-            </a>
+            </a> -->
             <a
-              href="https://github.com/"
+              href="https://github.com/tbysuico"
               target="_blank"
               class="circle"
               title="GitHub"
             >
               <i class="fab fa-github" style="color: #171515"></i>
             </a>
-            <a
+            <!-- <a
               href="https://twitter.com/"
               target="_blank"
               class="circle"
@@ -543,16 +548,16 @@
               title="Facebook"
             >
               <i class="fab fa-facebook-f" style="color: #1877f3"></i>
-            </a>
+            </a> -->
           </div>
         </div>
         <div class="hero-image">
-          <img src="../assets/images/tby.jpg" alt="Profile" />
+          <img src="images/tby.jpg" alt="Profile" />
         </div>
       </section>
 
       <!-- About Me Section -->
-      <section class="about-me-section">
+      <section class="about-me-section" id="about">
         <div class="about-me-container">
           <h2>👋 About Me</h2>
           <div class="viewer-count">
@@ -575,7 +580,7 @@
             <div class="affiliation-card">
               <h3>Affiliations</h3>
               <ul>
-                <li>SPARCS</li>
+                <li>Society of Programmers and Refined Computer Scientists (SPARCS)</li>
               </ul>
             </div>
           </div>
